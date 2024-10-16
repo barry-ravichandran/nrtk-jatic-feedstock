@@ -1,5 +1,5 @@
 {% set name = "nrtk-jatic" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nrtk_jatic-{{ version }}.tar.gz
-  sha256: 57d827c541d9b26a1df464516a79a3b3603eb0d8302f5b68b9b6606a7cf52bfe
+  sha256: 2405efecd75bf6dc1f380e96b868a1c3b52b241bf609ae349910602db0e89705
 
 build:
   skip: true  # [win]

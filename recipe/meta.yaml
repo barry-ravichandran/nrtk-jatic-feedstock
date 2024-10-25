@@ -11,6 +11,8 @@ source:
 
 build:
   skip: true  # [win]
+  entry_points:
+    - nrtk-perturber = nrtk_jatic.utils.bin.nrtk_perturber_cli:nrtk_perturber_cli
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 

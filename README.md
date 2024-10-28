@@ -98,6 +98,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-nrtk--jatic-green.svg)](https://anaconda.org/conda-forge/nrtk-jatic) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nrtk-jatic.svg)](https://anaconda.org/conda-forge/nrtk-jatic) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nrtk-jatic.svg)](https://anaconda.org/conda-forge/nrtk-jatic) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nrtk-jatic.svg)](https://anaconda.org/conda-forge/nrtk-jatic) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nrtk--jatic--graphics-green.svg)](https://anaconda.org/conda-forge/nrtk-jatic-graphics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nrtk-jatic-graphics.svg)](https://anaconda.org/conda-forge/nrtk-jatic-graphics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nrtk-jatic-graphics.svg)](https://anaconda.org/conda-forge/nrtk-jatic-graphics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nrtk-jatic-graphics.svg)](https://anaconda.org/conda-forge/nrtk-jatic-graphics) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nrtk--jatic--headless-green.svg)](https://anaconda.org/conda-forge/nrtk-jatic-headless) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nrtk-jatic-headless.svg)](https://anaconda.org/conda-forge/nrtk-jatic-headless) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nrtk-jatic-headless.svg)](https://anaconda.org/conda-forge/nrtk-jatic-headless) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nrtk-jatic-headless.svg)](https://anaconda.org/conda-forge/nrtk-jatic-headless) |
 
 Installing nrtk-jatic
 =====================
@@ -109,16 +111,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `nrtk-jatic` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `nrtk-jatic, nrtk-jatic-graphics, nrtk-jatic-headless` can be installed with `conda`:
 
 ```
-conda install nrtk-jatic
+conda install nrtk-jatic nrtk-jatic-graphics nrtk-jatic-headless
 ```
 
 or with `mamba`:
 
 ```
-mamba install nrtk-jatic
+mamba install nrtk-jatic nrtk-jatic-graphics nrtk-jatic-headless
 ```
 
 It is possible to list all of the versions of `nrtk-jatic` available on your platform with `conda`:

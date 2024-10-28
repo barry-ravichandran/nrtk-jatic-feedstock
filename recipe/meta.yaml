@@ -14,7 +14,7 @@ build:
   entry_points:
     - nrtk-perturber = nrtk_jatic.utils.bin.nrtk_perturber_cli:nrtk_perturber_cli
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,6 +37,7 @@ requirements:
   run_constrained:
     - kwcoco >=0.2.18
     - pytorch >=1.7,!=1.12.0
+    - torchvision >=0.10.0
 
 test:
   imports:
@@ -56,6 +57,14 @@ outputs:
         - python
         - pybsm-graphics >=0.8.0
         - {{ pin_subpackage('nrtk-jatic', exact=True) }}
+    test:
+      imports:
+        - nrtk_jatic
+      commands:
+        - pip check
+      requires:
+        - pip
+
   - name: nrtk-jatic-headless
     requirements:
       host:
@@ -64,6 +73,13 @@ outputs:
         - python
         - pybsm-headless >=0.8.0
         - {{ pin_subpackage('nrtk-jatic', exact=True) }}
+    test:
+      imports:
+        - nrtk_jatic
+      commands:
+        - pip check
+      requires:
+        - pip
 
 about:
   home: https://pypi.org/project/nrtk-jatic/

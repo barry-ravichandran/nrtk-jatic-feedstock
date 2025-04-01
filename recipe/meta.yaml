@@ -24,8 +24,8 @@ requirements:
   run:
     - python
     - numpy >=1.22,<2.0
-    - maite >=0.6.0,<0.7.0
-    - nrtk >=0.17.0
+    - maite ~=0.7.1
+    - nrtk >=0.20.0
     - fastapi <0.111.0,>=0.110.0
     - httpx <0.28.0,>=0.27.0
     - uvicorn <0.30.0,>=0.29.0
@@ -55,7 +55,7 @@ outputs:
         - python
       run:
         - python
-        - nrtk-graphics >=0.17.0
+        - nrtk-graphics >=0.20.0
         - {{ pin_subpackage('nrtk-jatic', exact=True) }}
     test:
       imports:
@@ -71,7 +71,7 @@ outputs:
         - python
       run:
         - python
-        - nrtk-headless >=0.17.0
+        - nrtk-headless >=0.20.0
         - {{ pin_subpackage('nrtk-jatic', exact=True) }}
     test:
       imports:
